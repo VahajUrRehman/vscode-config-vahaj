@@ -96,7 +96,12 @@
 .monaco-hover {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   padding: 10px !important;
-  background-image: linear-gradient(#273151 30%, #14141a 70%) !important;
+  background-image: linear-gradient(
+    317deg,
+    rgb(34, 85, 62) 1%,
+    rgb(66, 66, 96) 99%
+  ) !important;
+  /* background-image: linear-gradient(#273151 1%, #14141a 99%) !important; */
   backdrop-filter: blur(3px) !important;
   border-radius: 20px !important;
   border: 1px solid #418c6a !important;
@@ -142,10 +147,14 @@
   top: 50% !important;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.45) !important;
   padding: 10px 10px 18px 10px !important;
-  background-image: linear-gradient(#273151 30%, #14141a 70%) !important;
+  background-image: linear-gradient(
+    317deg,
+    rgb(66, 140, 107) 20%,
+    rgb(66, 66, 96) 80%
+  ) !important;
   backdrop-filter: blur(3px) !important;
   border-radius: 20px !important;
-  border: 2px solid #418c6a;
+  border: 2px solid #418c6a !important;
 }
 
 .monaco-list-rows {
@@ -194,6 +203,11 @@
 /* Command palette's input box placeholder. */
 .monaco-inputbox input::placeholder {
   color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Status Bar Font */
+.statusbar-item-label {
+  font-family: "Jetbrains Mono Semibold" !important;
 }
 
 .letterpress {
